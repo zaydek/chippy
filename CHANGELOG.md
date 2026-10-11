@@ -1,6 +1,6 @@
 # Changelog
 
-## Coming next
+## Coming next in 0.8.5
 
 - **Feature:** Copy the important part of an answer to your clipboard by asking.
 - **Feature:** Save the last few minutes of a conversation as a clip, if you turn that on.
