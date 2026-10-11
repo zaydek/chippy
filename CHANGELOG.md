@@ -1,12 +1,18 @@
 # Changelog
 
-## Coming next in 0.8.5
+## Coming next in 0.8.6
 
+- **Feature:** Voice cloning: add a person's voice, only with them there and agreeing out loud.
+
+## 0.8.5 — 2026-10-11 1:40 AM (PT)
+
+- **Feature:** Pause Chippy's spoken answer and pick it up again where it stopped.
+- **Feature:** Buttons replay or skip the spoken answer a sentence or a whole answer at a time.
+- **Feature:** Replay answers from earlier in a conversation, even after restarting Chippy.
 - **Feature:** Copy the important part of an answer to your clipboard by asking.
 - **Feature:** Save the last few minutes of a conversation as a clip, if you turn that on.
-- **Feature:** Pause and play, and buttons to go back or forward a sentence or a whole message.
-- **Feature:** Extra voices: Claude can give lines to more than one voice, each with its own speed and volume.
-- **Feature:** Voice cloning: add a person's voice, only with them there and agreeing out loud.
+- **Feature:** Claude can read parts of an answer in different voices, like characters in a story.
+- **Improvement:** Installing Chippy no longer asks you to enter a feedback address in /plugin.
 
 ## 0.8.4 — 2026-10-11 12:05 AM (PT)
 
