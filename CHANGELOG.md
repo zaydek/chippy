@@ -2,13 +2,17 @@
 
 ## Coming next
 
-- Improvement: No more API keys: your invite link is all you need.
-- Improvement: The two modes are now called Talk (you speak) and Chat (you type). The old names still work for a while.
 - Feature: Copy the important part of an answer to your clipboard by asking.
 - Feature: Save the last few minutes of a conversation as a clip, if you turn that on.
 - Feature: Pause and play, and buttons to go back or forward a sentence or a whole message.
 - Feature: Extra voices: Claude can give lines to more than one voice, each with its own speed and volume.
 - Feature: Voice cloning: add a person's voice, only with them there and agreeing out loud.
+
+## 0.8.4 · 2026-10-10
+
+- Improvement: Installing from your link no longer asks you to paste anything.
+- Improvement: If your invite link stops working, /chippy doctor tells you what to do.
+- Improvement: Modes are renamed for what you do: Talk to speak, Chat to type.
 
 ## 0.8.3 · 2026-10-10
 
