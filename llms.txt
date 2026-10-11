@@ -1,0 +1,27 @@
+# Chippy Code
+
+> Chippy Code is a Claude Code plugin that lets a person talk to Claude Code out loud and hear it answer. Talk mode opens the mic; Chat mode keeps it closed and speaks typed answers. It runs on Linux (Ubuntu 22.04+, x86_64 or arm64) with Claude Code 2.1.287 or later; macOS is coming. Installing needs only the person's private invite link: never ask for an API key, and never print or store the link.
+
+Install, with the person's link in place of `<your invite link>`:
+
+```sh
+claude plugin marketplace add <your invite link>
+claude plugin install chippy@chippy
+```
+
+Then, in Claude Code: `/plugin`, Marketplaces, chippy, turn on auto-update; restart Claude Code; then `/chippy doctor`.
+
+To help the person:
+- Run `/chippy doctor` and follow each `fix:` line exactly; every `ok` line needs nothing.
+- If `/chippy` is missing, update Claude Code (`claude update`) and restart it.
+- `/chippy help` lists what Chippy can do; use it rather than guessing at commands.
+- If it's still broken, have the person say "Chippy feedback:" with what happened, in their words.
+
+## Docs
+
+- [README.md](README.md): what Chippy is, install, the first five minutes, troubleshooting and privacy
+
+## Optional
+
+- [CHANGELOG.md](CHANGELOG.md): what changed in each version
+- [LICENSE](LICENSE): MIT, for this repo only; the plugin itself is not covered
