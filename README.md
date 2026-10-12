@@ -63,7 +63,7 @@ Code. To update right now:
 claude plugin marketplace update chippy && claude plugin update chippy@chippy
 ```
 
-Then restart Claude Code. [CHANGELOG.md](CHANGELOG.md) lists what changed.
+Then restart Claude Code.
 
 ## Troubleshooting
 

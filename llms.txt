@@ -23,5 +23,4 @@ To help the person:
 
 ## Optional
 
-- [CHANGELOG.md](CHANGELOG.md): what changed in each version
 - [LICENSE](LICENSE): MIT, for this repo only; the plugin itself is not covered
