@@ -1,25 +1,25 @@
-# Chippy Code
+# Chippy
 
-> Chippy Code is a Claude Code plugin that lets a person talk to Claude Code out loud and hear it answer. Talk mode opens the mic; Chat mode keeps it closed and speaks typed answers. It runs on Linux (Ubuntu 22.04+, x86_64 or arm64) with Claude Code 2.1.287 or later; macOS is coming. Installing needs only the person's private invite link: never ask for an API key, and never print or store the link.
+> Chippy is a Claude Code plugin that lets a person talk to Claude Code out loud and hear its answers read back. It works with Claude Code in a terminal on a Mac with Apple silicon or on Ubuntu with its standard GNOME desktop. Never ask for an API key.
 
-Install, with the person's link in place of `<your invite link>`:
+Install, in a terminal:
 
 ```sh
-claude plugin marketplace add <your invite link>
-claude plugin install chippy@chippy
+curl -fsSL https://chippy.fly.dev/install.sh | sh
 ```
 
-Then, in Claude Code: `/plugin`, Marketplaces, chippy, turn on auto-update; restart Claude Code; then `/chippy doctor`.
+It asks once before it installs. In a Claude Code chat that was already open, type `/reload-plugins` once, then `/chippy`.
 
 To help the person:
+- `/chippy` turns Chippy on in that chat; `/chippy both`, `/chippy talk` and `/chippy listen` choose how; `/chippy off` turns it off.
 - Run `/chippy doctor` and follow each `fix:` line exactly; every `ok` line needs nothing.
-- If `/chippy` is missing, update Claude Code (`claude update`) and restart it.
+- On a Mac, if Chippy can't hear, the terminal app needs the microphone: System Settings, Privacy & Security, Microphone.
 - `/chippy help` lists what Chippy can do; use it rather than guessing at commands.
-- If it's still broken, have the person say "Chippy feedback:" with what happened, in their words.
+- Uninstall: `curl -fsSL https://chippy.fly.dev/uninstall.sh | sh` (add `-s -- --all` to delete its saved data too).
 
 ## Docs
 
-- [README.md](README.md): what Chippy is, install, the first five minutes, troubleshooting and privacy
+- [README.md](README.md): what Chippy is, what you need, install and use
 
 ## Optional
 
