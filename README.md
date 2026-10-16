@@ -4,35 +4,24 @@
 
 Talk to Claude Code out loud, and hear its answers read back to you.
 
-## Getting started: macOS
+## Getting started
 
-- **You need:** a Mac with Apple silicon on macOS 13 or later, and Claude Code (`claude --version` prints its version).
-- **Install:** paste this into Terminal. It asks once before it installs.
-
-  ```
-  curl -fsSL https://chippy.fly.dev | sh
-  ```
-
-- **First run:** in a Claude Code chat that was already open, type `/reload-plugins` once. The first time you turn
-  Chippy on, macOS asks to let your terminal app use the microphone; click Allow. If you clicked Don't Allow, turn your
-  terminal app on in System Settings > Privacy & Security > Microphone.
-- **Keys:** none. Chippy needs no API key and no account.
-- **Uninstall:** `curl -fsSL https://chippy.fly.dev/uninstall | sh`
-
-## Getting started: Ubuntu
-
-- **You need:** Ubuntu 24.04 or later with its standard desktop, and Claude Code (`claude --version` prints its
-  version).
-- **Install:** paste this into Terminal. It asks once before it installs.
+- **You need:** Claude Code (`claude --version` prints its version). Chippy needs no API key and no account.
+- **Install:** paste this into a terminal. It asks once before it installs.
 
   ```
   curl -fsSL https://chippy.fly.dev | sh
   ```
 
-- **First run:** in a Claude Code chat that was already open, type `/reload-plugins` once. Ubuntu doesn't ask about the
-  microphone: Chippy listens on the input chosen in Settings > Sound.
-- **Keys:** none. Chippy needs no API key and no account.
+- **First run:** in a Claude Code chat that was already open, type `/reload-plugins` once, then `/chippy`.
 - **Uninstall:** `curl -fsSL https://chippy.fly.dev/uninstall | sh`
+
+**macOS:** Apple silicon, macOS 13 or later. The first time you turn Chippy on, macOS asks to let your terminal app use
+the microphone; click Allow. If you clicked Don't Allow, turn your terminal app on in System Settings > Privacy &
+Security > Microphone.
+
+**Ubuntu:** 24.04 or later with its standard desktop. Ubuntu doesn't ask about the microphone: Chippy listens on the
+input chosen in Settings > Sound.
 
 ## Use
 
