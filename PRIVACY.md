@@ -1,6 +1,6 @@
 # Chippy privacy
 
-Last updated: 2026-10-16. This covers Chippy 0.9.26, installed with `curl -fsSL https://chippy.fly.dev | sh`.
+Last updated: 2026-10-16. This covers Chippy 0.9.26.
 
 ## In short
 
@@ -52,8 +52,8 @@ It never reads your clipboard. It writes to it only when you ask it to copy some
 | Your mic's audio, as it hears it | xAI's speech-to-text, through Chippy's own server | While the mic is open in Talk or Talk + Listen and not muted |
 | A record-button recording | xAI's speech-to-text, through Chippy's own server | When you let go of the button |
 | The text of each reply it reads aloud | xAI's text-to-speech, through Chippy's own server | In Listen and Talk + Listen, and when you press Play; a line it has made before is played from disk instead |
-| An install id, when this computer had Chippy before | chippy.fly.dev | When you run the install line |
-| A sign-in with GitHub, if you choose it (you can continue as a guest) | chippy.fly.dev and GitHub | Right after you install, or with `curl -fsSL https://chippy.fly.dev \| sh -s sign-in` |
+| An install id, when this computer had Chippy before | Chippy's own server | When you run the install line |
+| A sign-in with GitHub, if you choose it (you can continue as a guest) | Chippy's own server and GitHub | Right after you install, or later with the install line, with `-s sign-in` added at the end |
 | A check for a newer version: Chippy's version, your OS and CPU type, and this install's sign-in | Chippy's own server | Each time a Claude Code chat starts; a new version downloads only when you run `chippy update` |
 | What it runs inside (the list under "What it reads") | Chippy's own server | Once per Claude Code chat |
 | Your feedback's words, up to 4,000 characters | Chippy's own server, for Chippy's author | Only when you send feedback (`/chippy feedback <words>`, or saying "send feedback") |
@@ -75,7 +75,7 @@ No key is kept on your computer, and Chippy never asks you for one.
 ## How to delete it
 
 - In Claude Code: `/chippy uninstall`, answer Yes, then answer Yes to "Also delete your settings and saved mic clips?"
-- Or in a terminal: `curl -fsSL https://chippy.fly.dev/uninstall | sh -s -- --all`
+- Or in a terminal: the Uninstall line from the README, with `-s -- --all` added at the end
 
 Uninstalling can leave some of these behind, so delete any that are still there:
 
