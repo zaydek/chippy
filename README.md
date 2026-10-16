@@ -36,8 +36,8 @@ Talk to Claude Code out loud, and hear its answers read back to you.
 
 ## Use
 
-- `/chippy` in a Claude Code chat turns Chippy on there.
-- `/chippy off` turns it off.
+- `/chippy`: Chippy talks and listens in this chat.
+- `/chippy off`: Chippy stops in this chat.
 - `/chippy help` to learn more.
 
 ## License
