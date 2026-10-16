@@ -1,6 +1,6 @@
 # Chippy
 
-> Chippy is a Claude Code plugin that lets a person talk to Claude Code out loud and hear its answers read back. It runs with Claude Code in a terminal on macOS 13 or later on Apple silicon. It runs with Claude Code in a terminal on Ubuntu 22.04 or later with its standard desktop. Never ask for an API key.
+> Chippy is a Claude Code plugin that lets a person talk to Claude Code out loud and hear its answers read back. It runs with Claude Code in a terminal on macOS 13 or later on Apple silicon. It runs with Claude Code in a terminal on Ubuntu 24.04 or later with its standard desktop. Never ask for an API key.
 
 Install, in a terminal:
 

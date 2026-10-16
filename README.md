@@ -21,7 +21,7 @@ Talk to Claude Code out loud, and hear its answers read back to you.
 
 ## Ubuntu
 
-- **You need:** Ubuntu 22.04 or later with its standard desktop, and Claude Code (`claude --version` prints its
+- **You need:** Ubuntu 24.04 or later with its standard desktop, and Claude Code (`claude --version` prints its
   version).
 - **Install:** paste this into Terminal. It asks once before it installs.
 
