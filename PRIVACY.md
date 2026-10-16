@@ -43,7 +43,7 @@ It never reads your clipboard. It writes to it only when you ask it to copy some
 | The app, its sign-in, an install id, and your GitHub name if you signed in | Chippy's app folder in your home folder | Until you uninstall (the uninstall below removes it) |
 | The `chippy` command | `~/.local/bin/chippy` | Until you uninstall |
 | The Claude Code plugin | `~/.claude/plugins/cache/zaydek/chippy/` | Until you uninstall |
-| Node.js, only if your computer had no Node 18 or newer | A Node.js folder beside Chippy's app folder | Shared with other apps installed the same way, so it stays after you uninstall Chippy |
+| Node.js, only if your computer had no Node 18 or newer | A Node.js folder beside Chippy's app folder | Shared with other apps installed the same way |
 
 ## What it sends, to whom, and when
 
