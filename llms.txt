@@ -15,7 +15,7 @@ To help the person:
 - Run `/chippy doctor` and follow each `fix:` line exactly; every `ok` line needs nothing.
 - On a Mac, if Chippy can't hear, the terminal app needs the microphone: System Settings, Privacy & Security, Microphone.
 - `/chippy help` lists what Chippy can do; use it rather than guessing at commands.
-- Uninstall: `curl -fsSL https://chippy.fly.dev/uninstall.sh | sh` (add `-s -- --all` to delete its saved data too).
+- Uninstall: `curl -fsSL https://chippy.fly.dev/uninstall | sh` (add `-s -- --all` to delete its saved data too).
 
 ## Docs
 
