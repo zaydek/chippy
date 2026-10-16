@@ -27,7 +27,7 @@ time you turn Chippy on, a Mac asks you to let your terminal app use the microph
 - `/chippy talk`: you talk, and replies stay as text. `/chippy listen`: you type, and replies are read aloud.
 - `/chippy off` turns it off. `/chippy help` lists everything else.
 
-To uninstall: `curl -fsSL https://chippy.fly.dev/uninstall.sh | sh`.
+To uninstall, run `chippy uninstall` in a terminal.
 
 ## License
 
