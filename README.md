@@ -31,4 +31,4 @@ To uninstall: `curl -fsSL https://chippy.fly.dev/uninstall.sh | sh`.
 
 ## License
 
-See [LICENSE](LICENSE).
+These docs are open source under the MIT license (see [LICENSE](LICENSE)). Chippy itself is not open source.
