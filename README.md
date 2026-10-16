@@ -43,7 +43,7 @@ Talk to Claude Code out loud, and hear its answers read back to you.
 ## Privacy
 
 Chippy keeps your settings, its logs and the clips you ask for on your computer. What your mic hears while it is open,
-and the replies Chippy reads aloud, go to xAI through Chippy's server (clawed-apps.fly.dev) to become words and speech,
+and the replies Chippy reads aloud, go to xAI through Chippy's own server to become words and speech,
 and feedback goes only when you send it. [PRIVACY.md](PRIVACY.md) says exactly what it reads, keeps and sends.
 
 ## License

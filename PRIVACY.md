@@ -5,7 +5,7 @@ Last updated: 2026-10-16. This covers Chippy 0.9.26, installed with `curl -fsSL 
 ## In short
 
 - While the mic is open, what it hears goes to xAI to be turned into words. The replies Chippy reads aloud go to xAI to
-  be spoken. Both pass through Chippy's server, clawed-apps.fly.dev, which adds Chippy's xAI key and passes them on.
+  be spoken. Both pass through Chippy's own server, which adds Chippy's xAI key and passes them on.
 - Feedback goes only when you send it, and only its words.
 - Everything else Chippy keeps stays on your computer, in the folders listed below.
 
@@ -40,24 +40,24 @@ It never reads your clipboard. It writes to it only when you ask it to copy some
 | Settings | `~/.claude/plugins/store/` (the `chippy_` file) and `~/.cache/chippy/listener-settings.json` | Until you delete them |
 | A full log, including what you and Claude said, word for word | `/tmp/jarvis-live/live.log` | Added to while Chippy runs; no limit; your computer's temporary folder |
 | Start times, and a line for each copy (its time, size and first 20 characters) | `~/.cache/chippy/starts.log`, `~/.cache/chippy/copies.log` | Until you delete them |
-| The app, its sign-in, an install id, and your GitHub name if you signed in | `~/.claude-apps/chippy/` | Until you uninstall |
+| The app, its sign-in, an install id, and your GitHub name if you signed in | Chippy's app folder in your home folder | Until you uninstall (the uninstall below removes it) |
 | The `chippy` command | `~/.local/bin/chippy` | Until you uninstall |
 | The Claude Code plugin | `~/.claude/plugins/cache/zaydek/chippy/` | Until you uninstall |
-| Node.js, only if your computer had no Node 18 or newer | `~/.claude-apps/.node/` | Shared with other apps installed the same way; delete it if nothing else uses it |
+| Node.js, only if your computer had no Node 18 or newer | A Node.js folder beside Chippy's app folder | Shared with other apps installed the same way, so it stays after you uninstall Chippy |
 
 ## What it sends, to whom, and when
 
 | What | To | When |
 | --- | --- | --- |
-| Your mic's audio, as it hears it | xAI's speech-to-text, through clawed-apps.fly.dev | While the mic is open in Talk or Talk + Listen and not muted |
-| A record-button recording | xAI's speech-to-text, through clawed-apps.fly.dev | When you let go of the button |
-| The text of each reply it reads aloud | xAI's text-to-speech, through clawed-apps.fly.dev | In Listen and Talk + Listen, and when you press Play; a line it has made before is played from disk instead |
+| Your mic's audio, as it hears it | xAI's speech-to-text, through Chippy's own server | While the mic is open in Talk or Talk + Listen and not muted |
+| A record-button recording | xAI's speech-to-text, through Chippy's own server | When you let go of the button |
+| The text of each reply it reads aloud | xAI's text-to-speech, through Chippy's own server | In Listen and Talk + Listen, and when you press Play; a line it has made before is played from disk instead |
 | An install id, when this computer had Chippy before | chippy.fly.dev | When you run the install line |
 | A sign-in with GitHub, if you choose it (you can continue as a guest) | chippy.fly.dev and GitHub | Right after you install, or with `curl -fsSL https://chippy.fly.dev \| sh -s sign-in` |
-| A check for a newer version: Chippy's version, your OS and CPU type, and this install's sign-in | clawed-apps.fly.dev | Each time a Claude Code chat starts; a new version downloads only when you run `chippy update` |
-| What it runs inside (the list under "What it reads") | clawed-apps.fly.dev | Once per Claude Code chat |
-| Your feedback's words, up to 4,000 characters | clawed-apps.fly.dev, for Chippy's author | Only when you send feedback (`/chippy feedback <words>`, or saying "send feedback") |
-| A check that the speech service answers | clawed-apps.fly.dev | When you run `/chippy doctor` |
+| A check for a newer version: Chippy's version, your OS and CPU type, and this install's sign-in | Chippy's own server | Each time a Claude Code chat starts; a new version downloads only when you run `chippy update` |
+| What it runs inside (the list under "What it reads") | Chippy's own server | Once per Claude Code chat |
+| Your feedback's words, up to 4,000 characters | Chippy's own server, for Chippy's author | Only when you send feedback (`/chippy feedback <words>`, or saying "send feedback") |
+| A check that the speech service answers | Chippy's own server | When you run `/chippy doctor` |
 | Node.js, if your computer has no Node 18 or newer | nodejs.org | Once, when Chippy is first set up |
 
 `/chippy off` closes the mic and stops all speech. The version check and the once-per-chat report go whenever a Claude
@@ -80,7 +80,7 @@ No key is kept on your computer, and Chippy never asks you for one.
 Uninstalling can leave some of these behind, so delete any that are still there:
 
 ```sh
-rm -rf ~/.cache/chippy ~/.cache/chippy-reader /tmp/jarvis-live ~/.claude-apps/chippy
+rm -rf ~/.cache/chippy ~/.cache/chippy-reader /tmp/jarvis-live
 rm -f ~/.claude/plugins/store/chippy_*.json ~/.local/bin/chippy
 ```
 
