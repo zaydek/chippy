@@ -4,7 +4,7 @@
 
 Talk to Claude Code out loud, and hear its answers read back to you.
 
-## macOS
+## Getting started: macOS
 
 - **You need:** a Mac with Apple silicon on macOS 13 or later, and Claude Code (`claude --version` prints its version).
 - **Install:** paste this into Terminal. It asks once before it installs.
@@ -19,7 +19,7 @@ Talk to Claude Code out loud, and hear its answers read back to you.
 - **Keys:** none. Chippy needs no API key and no account.
 - **Uninstall:** `curl -fsSL https://chippy.fly.dev/uninstall | sh`
 
-## Ubuntu
+## Getting started: Ubuntu
 
 - **You need:** Ubuntu 24.04 or later with its standard desktop, and Claude Code (`claude --version` prints its
   version).
@@ -36,10 +36,9 @@ Talk to Claude Code out loud, and hear its answers read back to you.
 
 ## Use
 
-- Type `/chippy` in a Claude Code chat and choose how you want to use it. That chat is the one Chippy speaks for.
-- `/chippy both`: you talk, your words type into the prompt box and send when you pause, and replies are read aloud.
-- `/chippy talk`: you talk, and replies stay as text. `/chippy listen`: you type, and replies are read aloud.
-- `/chippy off` turns it off. `/chippy help` lists everything else.
+- `/chippy` in a Claude Code chat turns Chippy on there.
+- `/chippy off` turns it off.
+- `/chippy help` to learn more.
 
 ## License
 
