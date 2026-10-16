@@ -5,7 +5,7 @@
 Install, in a terminal:
 
 ```sh
-curl -fsSL https://chippy.fly.dev/install.sh | sh
+curl -fsSL https://chippy.fly.dev | sh
 ```
 
 It asks once before it installs. In a Claude Code chat that was already open, type `/reload-plugins` once, then `/chippy`.

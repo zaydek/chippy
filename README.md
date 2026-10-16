@@ -14,7 +14,7 @@ Talk to Claude Code out loud, and hear its answers read back to you.
 Paste this into a terminal:
 
 ```
-curl -fsSL https://chippy.fly.dev/install.sh | sh
+curl -fsSL https://chippy.fly.dev | sh
 ```
 
 It asks once before it installs. In a Claude Code chat that was already open, type `/reload-plugins` once. The first
